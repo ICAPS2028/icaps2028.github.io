@@ -1,0 +1,11 @@
+{{ define "main" }}
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">{{ .Title }}</h1>
+			<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time>
+		</header>
+		<div class="content post__content clearfix">{{ .Content }}</div>
+	</article>
+</main>
+{{ end }}
